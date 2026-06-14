@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chemistry.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainPage">
+
+<div class="video-grid">
+
+<div class="card" onclick="openVideo('https://educontent.cloud/watch/3a9de1ed-5f81-4a28-bfef-b7c8d9c45e52?partner=15')">
+<img src="/img/photo_2026-06-13_22-51-45.jpg">
+<div class="card-title">День 3. Органическая химия: теория и практика первой части. Часть 1</div>
+</div>
+
+<div class="card" onclick="openVideo('')">
+<img src="/img/photo_2026-06-13_22-51-45.jpg">
+<div class="card-title"></div>
+</div>
+
+<div class="card" onclick="openVideo('')">
+<img src="/img/photo_2026-06-13_22-51-45.jpg">
+<div class="card-title"></div>
+</div>
+
+<div class="card" onclick="openVideo('')">
+<img src="/img/photo_2026-06-13_22-51-45.jpg">
+<div class="card-title"></div>
+</div>
+
+<div class="card" onclick="openVideo('')">
+<img src="/img/photo_2026-06-13_22-51-45.jpg">
+<div class="card-title"></div>
+</div>
+
+</div>
+
+<a href="../index.html" class="back-home">
+    ← Главная
+</a>
+
+</div>
+
+<!-- Страница плеера -->
+<div class="player-page" id="playerPage">
+    <div class="player-controls">
+        <button class="back-btn" onclick="backToMenu()">
+            ← Назад к урокам
+        </button>
+    </div>
+    <div class="iframe-container">
+        <!-- Добавлены все виды разрешений на фулскрин для всех браузеров -->
+        <iframe 
+            id="player" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

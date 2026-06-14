@@ -12,7 +12,7 @@ body{
 
 .video-grid{
     max-width:1200px;
-    margin:80px auto 0; /* 👈 добавили отступ сверху */
+    margin:80px auto 0;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
