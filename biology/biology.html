@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="biology.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainPage">
+
+<div class="video-grid">
+
+<div class="card" onclick="openVideo('https://educontent.cloud/watch/ddbd0904-7dd3-4277-af37-741497814274?partner=15')">
+<img src="/img/photo_2026-06-14_15-30-40.jpg">
+<div class="card-title">День 5. Биология человека, теория + практика. Часть 1</div>
+</div>
+
+<div class="card" onclick="openVideo('https://educontent.cloud/watch/965122a3-87a3-4da2-8e14-28dfcf25ff70?partner=15')">
+<img src="/img/photo_2026-06-14_15-30-40.jpg">
+<div class="card-title">День 5. Биология человека, теория + практика. Часть 2</div>
+</div>
+
+<div class="card" onclick="openVideo('https://educontent.cloud/watch/f01aaa57-89a0-4a9c-bb4d-0c09159a7fdc?partner=15')">
+<img src="/img/photo_2026-06-14_15-30-40.jpg">
+<div class="card-title">День 6. Биология человека, теория + практика. Часть 1</div>
+</div>
+
+<div class="card" onclick="openVideo('https://educontent.cloud/watch/52076f2c-f1e5-4170-802f-f8b6f392ac95?partner=15')">
+<img src="/img/photo_2026-06-14_15-30-40.jpg">
+<div class="card-title">День 6. Биология человека, теория + практика. Часть 2</div>
+</div>
+
+<div class="card" onclick="openVideo('')">
+<img src="https://picsum.photos/600/350?6">
+<div class="card-title">Урок 6</div>
+</div>
+
+</div>
+
+<a href="../index.html" class="back-home">
+    ← Главная
+</a>
+
+</div>
+
+<!-- Страница плеера -->
+<div class="player-page" id="playerPage">
+    <div class="player-controls">
+        <button class="back-btn" onclick="backToMenu()">
+            ← Назад к урокам
+        </button>
+    </div>
+    <div class="iframe-container">
+        <!-- Добавлены все виды разрешений на фулскрин для всех браузеров -->
+        <iframe 
+            id="player" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

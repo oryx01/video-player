@@ -8,67 +8,27 @@
     <title>Видеоуроки</title>
 </head>
 <body>
-    <div id="mainPage">
-
-<header>Видеоуроки</header>
-
-<div class="video-grid">
-
-<div class="card" onclick="openVideo('https://educontent.cloud/watch/3a9de1ed-5f81-4a28-bfef-b7c8d9c45e52?partner=15')">
-<img src="img/photo_2026-06-13_22-51-45.jpg">
-<div class="card-title">
-День 3. Органическая химия: теория и практика первой части. Часть 1
+   <div class="hero">
+    <h1>📚 Видеоуроки</h1>
+    <p>Выберите нужный раздел</p>
 </div>
 
-</div>
+<div class="categories">
 
-<div class="card" onclick="openVideo('https://educontent.cloud/watch/ddbd0904-7dd3-4277-af37-741497814274?partner=15')">
-<img src="img/photo_2026-06-14_15-30-40.jpg">
-<div class="card-title">День 5. Биология человека, теория + практика. Часть 1</div>
-</div>
+    <a href="biology/biology.html" class="category biology">
+        <div class="icon">🧬</div>
+        <h2>Биология</h2>
+    </a>
 
-<div class="card">
-<img src="https://picsum.photos/600/350?3">
-<div class="card-title">Урок 3</div>
-</div>
+    <a href="chemistry.html" class="category chemistry">
+        <div class="icon">⚗️</div>
+        <h2>Химия</h2>
+    </a>
 
-<div class="card">
-<img src="https://picsum.photos/600/350?4">
-<div class="card-title">Урок 4</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/600/350?5">
-<div class="card-title">Урок 5</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/600/350?6">
-<div class="card-title">Урок 6</div>
-</div>
-
-</div>
-
-</div>
-
-<!-- Страница плеера -->
-<div class="player-page" id="playerPage">
-    <div class="player-controls">
-        <button class="back-btn" onclick="backToMenu()">
-            ← Назад к урокам
-        </button>
-    </div>
-    <div class="iframe-container">
-        <!-- Добавлены все виды разрешений на фулскрин для всех браузеров -->
-        <iframe 
-            id="player" 
-            allow="autoplay; fullscreen; picture-in-picture" 
-            allowfullscreen
-            webkitallowfullscreen
-            mozallowfullscreen>
-        </iframe>
-    </div>
-</div>
+    <a href="driving.html" class="category driving">
+        <div class="icon">🚗</div>
+        <h2>Автошкола</h2>
+    </a>
 
 </div>
 </body>

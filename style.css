@@ -3,60 +3,105 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background:#111827;
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top left,#2563eb 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#7c3aed 0%,transparent 40%),
+    #0f172a;
     color:white;
 }
 
-header{
+.hero{
     text-align:center;
-    padding:30px;
-    font-size:32px;
-    font-weight:bold;
+    padding:80px 20px 50px;
 }
 
-.video-grid{
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:.8;
+}
+
+.categories{
     max-width:1200px;
     margin:auto;
+    padding:20px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-    padding:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
-.card{
-    background:#1f2937;
-    border-radius:16px;
-    overflow:hidden;
-    cursor:pointer;
-    transition:.3s;
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
+.category{
+    text-decoration:none;
+    color:white;
+    padding:50px 20px;
+    border-radius:25px;
+    text-align:center;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    transition:.35s;
 }
 
-.card:hover{
-    transform:translateY(-8px);
+.category:hover{
+    transform:translateY(-10px) scale(1.03);
 }
 
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
+.icon{
+    font-size:80px;
+    margin-bottom:20px;
 }
 
-.card-title{
-    padding:15px;
-    font-size:20px;
-    font-weight:bold;
+.category h2{
+    font-size:32px;
 }
 
-.player-page{
-    display:none;
-    height:100vh;
-    padding:20px;
+.biology:hover{
+    box-shadow:0 0 40px rgba(34,197,94,.7);
 }
+
+.chemistry:hover{
+    box-shadow:0 0 40px rgba(168,85,247,.7);
+}
+
+.driving:hover{
+    box-shadow:0 0 40px rgba(59,130,246,.7);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.category{
+    padding:35px 20px;
+}
+
+.icon{
+    font-size:60px;
+}
+
+.category h2{
+    font-size:24px;
+}
+
+}
+
+
+
+
+
+
+
 
 .back-btn{
     background:#2563eb;
