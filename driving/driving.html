@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="driving.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainPage">
+
+<div class="video-grid">
+
+<div class="card" onclick="openVideo('https://drive.google.com/file/d/1w-4HDv-1IhQ0u_moSZJhE8yCY3kiBPnA/preview')">
+<img src="/img/скорость реакции.jpg">
+<div class="card-title">Скорость реакции водителя: как развить? Бомбическое упражнение, которое убережет от ДТП</div>
+</div>
+
+<div class="card" onclick="openVideo('https://drive.google.com/file/d/1jUODFKJX-G3pyVg3n8MUusuysvQ2B1Dq/preview')">
+<img src="/img/Габариты.jpg">
+<div class="card-title">Как чувствовать габариты машины</div>
+</div>
+
+<div class="card" onclick="openVideo('https://drive.google.com/file/d/194FkBUVFMNIXtS3485aRCaCLGbrbrEOW/preview')">
+<img src="/img/габариты2.jpg">
+<div class="card-title">Как “Чувствовать” габариты на разных авто, даже если ты впервые сел за руль.</div>
+</div>
+
+<div class="card" onclick="openVideo('https://drive.google.com/file/d/1SRIxRqbRFAEaiZ6q6hjQSQI2pyxc_uaw/preview')">
+<img src="/img/сочи.jpg">
+<div class="card-title">Изучаем нюансы сдачи экзамена на категорию Б в ГИБДД Сочи</div>
+</div>
+
+</div>
+
+<a href="../index.html" class="back-home">
+    ← Главная
+</a>
+
+</div>
+
+<!-- Страница плеера -->
+<div class="player-page" id="playerPage">
+    <div class="player-controls">
+        <button class="back-btn" onclick="backToMenu()">
+            ← Назад к урокам
+        </button>
+    </div>
+    <div class="iframe-container">
+        <!-- Добавлены все виды разрешений на фулскрин для всех браузеров -->
+        <iframe 
+            id="player" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
